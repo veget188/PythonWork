@@ -2,13 +2,6 @@
 #text = z.read()
 #s = text.upper()
 #print(text)
-echo "# Randompythonstuff" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/veget188/Randompythonstuff.git
-git push -u origin main
 
 month = 28
 rp1,rp2 = 1,1 # first litter, starting couple
