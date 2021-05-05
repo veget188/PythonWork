@@ -1,0 +1,22 @@
+z = open("rosalind_gc.txt" , "r")
+text = z.readlines()
+dic = {}
+answer = 0
+ak = 0
+
+for i in text:
+    if i.startswith(">"):
+        nuc = i.strip("\n").strip(">")
+        dic[nuc] = ""
+    else:
+        dic[nuc] += i.strip("\n")
+
+for n in dic:
+	c = dic[n].count("C")
+	g = dic[n].count("G")
+	answer = 100*((g+c)/len(dic[n]))
+	dic[n] = answer
+	if answer > ak:
+		ak = answer
+		print(n)
+		print(ak)
