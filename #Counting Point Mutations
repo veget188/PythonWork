@@ -1,0 +1,18 @@
+#Counting Point Mutations
+text = open("rosalind_hamm.txt" , "r")
+txt = text.readlines()
+
+ex = txt[0]
+ex1 = txt[1]
+z = 0
+answer = 0
+
+for n in ex:
+	if n == ex1[z]:
+		pass
+	else:	
+		answer += 1
+	z += 1
+
+z = 0
+print(answer)
